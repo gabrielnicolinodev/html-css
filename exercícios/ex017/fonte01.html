@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        
+        body{
+            font-family: 'work Sans', Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm (Centímetro), mm (Milímetro), in (Polegada), px (Píxel), pt (Ponto), pc (Paca).
+            
+            Medidas Relativas
+            em (Altura M de uma fonte), ex (Altura X de uma fonte), rem (Relativo a fonte configurada no  body), vw (Largura da ViewPort/Tamanho da Tela), vh (Altura da ViewPort), % 
+            
+            16px geralmente = 1em
+            2em seria o dobro dos 16px            
+            */
+
+            /*sempre usar px e/ou em*/
+            font-size: 1em;
+            /*lighter, normal, bold e bolder ou podemos utilizar também os números de 100 a 900. - isto só funciona em algumas fontes.*/
+        }
+        h1{
+            
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family 
+            
+            font-family: 'Work Sans', sans-serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: italic;*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsa magnam voluptatum, libero sed rerum repellat sit labore? Dicta unde tempore ut sequi soluta sapiente facere tempora repudiandae quas id? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur laudantium provident laboriosam voluptatum magnam corrupti veniam odio minus earum excepturi, dolorum officia, quasi similique sequi obcaecati explicabo quas repellat. Animi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit expedita aperiam soluta minima doloribus odio temporibus iure recusandae rem possimus, facere, explicabo amet in, dolorem nihil ratione laudantium unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate earum aspernatur non asperiores provident molestias commodi omnis impedit eius harum perferendis autem beatae molestiae, quibusdam expedita neque inventore recusandae quo!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, debitis hic. Laboriosam sint, eos ullam deleniti autem aspernatur dolore necessitatibus, magnam maiores voluptas distinctio repudiandae, laborum modi alias adipisci quibusdam.</p>    
+</body>
+</html>
