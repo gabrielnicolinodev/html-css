@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
-            /*no background-size, podemos utilziar algumas atribuições, como o 
-            - contain = 100% exibida a imagem,  - cover = se ajusta para cobrir totalemten a tela, dependendo do tamanho da viewport, ele pode cortar a imagem, 
+            no background-size, podemos utilziar algumas atribuições, como: 
+            - contain = 100% exibida a imagem,  
+            - cover = se ajusta para cobrir totalemten a tela, dependendo do tamanho da viewport, ele pode cortar a imagem, 
             - auto = deixa automático, isso denpende de cada navegador, podemos também utilizar o 
-            - tamanho fixo de pixels ou porcentagem.*/
+            - tamanho fixo de pixels ou porcentagem.
+            background-attachment: fixed;*/
+
+            /*Shorthand - background
+            color > image > position > repeat > [size] > attachment*/
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue ;
