@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat deleniti optio inventore explicabo quia voluptatum, dolores ipsum consequuntur, fuga iste itaque! Veritatis, ea! Quas nisi sit rem sapiente obcaecati.</p>
+    
+    <!--
+    -  sandbox "sandbox" = não deixa o site que está dentro do iframe coletar nenhuma dado do usuário - segurança no máximo
+    -  sandbox "allow-same-origin" = permitir o que for da mesma origem (páginas que eu mesmo criei)
+    -  sandbox "allow-form" = permitir formulários (login, senha etc) 
+    -  sandbox "allow-scripts" = permitir scripts (clicar em botões e mostrar mensagens e etc)
+    -  quando eu coloco o allow, ele desbloqueia somente oq eu declarei, por exemplo script, vai desbloquear somente o script. Caso eu queira desbloquear outros, basta ir adicionando na frente.
+    -->
+
+    <!--referrerpolicy "no-referrer" = fazer o google não coletar nenhuma informação do usuário atravéz do iframe - segurança no máximo -->
+
+    <!---->
+
+    <iframe src="paginas extras/pg004.html" referrerpolicy="no-referrer" sandbox="allow-same-origin allow-forms allow-scripts">
+        Seu navegador não é compatível com isso!
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis fugiat sint mollitia nihil minus, ut cumque. Praesentium quis quas sequi corporis perspiciatis esse pariatur enim animi eos! Corrupti, explicabo?</p>
+</body>
+</html>
