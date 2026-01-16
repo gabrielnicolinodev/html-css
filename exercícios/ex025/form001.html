@@ -14,9 +14,12 @@
     <h1>Meu primeiro formulário</h1>
     <!--Está forma de fazer um formulário irá funcionar, porém não é a forma ideal-->
 
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenoome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post" autocomplete="off ">
+        <p><label for="inome">Nome:</label> <!--No for, sempre colocamos o id, ou seja, inome-->
+            <input type="text" name="nome" id="inome"></p>
+        
+        <p><label for="isobrenome">Sobrenoome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
