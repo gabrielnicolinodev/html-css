@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do usuário" autocomplete="username"> 
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="mínimos 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!--
+    Autocomplete (sempre dentro do Form) - para que o navegador possa ou não sugerir os dados já utilziados para o usuário.Caso eu coloque o autocomplete dentro da tag Form, ele só terá a configuração on e off, no caso de um formulário que possui campo de senha, isso não seria ideal. Fazemos assim: colocamos o autocomplete no form e declarado em cada input.
+    Username - Nome de usuário.
+    New Password - Nova senha.
+    Current Password - Senha atual.
+    
+    Required - o campo se torna obrigatório o preenchimento.
+    
+    Minlength - quantidade mínima de caracteres que deve possuir aquele campo.
+    
+    Maxlength - quantidade máxima de caracteres que deve possuir aquele campo.
+    
+    Size - tamanho da área que será mostrada (ex: 8 - então irá mostrar 8 caracteres). Isso não influencia na quantidade mínima e máxima dos campos e sim visualmente, também criando uma rolagem lateral na caixa.
+    
+    Placeholder - seria como se fosse uma dica (o que fica dentro do campo do formulário - ex: Apelido, Mínimos 8 caracteres e etc.)
+    -->
+</body>
+</html>
