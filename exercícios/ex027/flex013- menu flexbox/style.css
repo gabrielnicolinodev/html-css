@@ -26,12 +26,13 @@ header{
 }
 
 header > h1{
-   border: 1px dotted black; 
+   /*border: 1px dotted black;*/
    flex: 0 0 200px;
+   text-shadow: 2px 2px 2px black;
 }
 
 header > nav{ /*seria um container dentro de outro container, lembrando que os itens desse container seria os links (a)*/
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
 
     display: flex;
     flex-flow: row wrap;
