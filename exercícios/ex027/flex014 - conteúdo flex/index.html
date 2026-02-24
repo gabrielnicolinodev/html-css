@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúrod Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="normal">
+        <h1>Exemplo de contaúdo flexível</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid aut in ipsa explicabo velit amet esse. Ipsum quisquam ea voluptatum eius in harum, magni ducimus saepe tempore reiciendis esse veniam.</p>
+    </header>
+    <main>
+        <section class="flex-content">
+            <article class="media-text">
+                <div class="text">
+                    <h2>Elemento Media -> Text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti quas illum architecto voluptatem a ea voluptatibus, perspiciatis eos quisquam assumenda suscipit quasi praesentium facilis. Incidunt labore porro voluptatibus odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veritatis, quibusdam mollitia dolorum culpa libero cupiditate laborum vero unde natus doloribus minima architecto, pariatur ipsum ad voluptates id repellendus veniam.</p>
+                </div>
+                <div class="media">
+                    <img src="imagem.png" alt="imagem-teste">
+                </div>
+            </article>
+            <article class="text-media">
+                <div class="text">
+                    <h2>Elemento Text -> Media</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est eligendi vitae laboriosam aliquid? Corporis exercitationem eligendi officiis odio repellendus, voluptatem facilis nisi nam officia debitis quia maxime asperiores ex. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus vel possimus quia natus optio neque, nemo soluta architecto sit est culpa esse laborum deleniti fugiat aperiam eligendi saepe consectetur voluptatem.</p>
+                </div>
+                <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZcQ5WDUUB0o?si=YRD3jbmzkOLDHViS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article> <!--Independente da ordem, se é media e depois texto, sempre coloco a div texto primeiro, isso será concertado com a quebra--> 
+        </section> <!--Fim da sessão flex-content-->
+        <section class="normal">
+            <h2>Conteúdo normal</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eius reprehenderit! Laboriosam consequatur ipsam dolore ad impedit quae modi sit molestias labore officiis. Veniam numquam iusto impedit ab facere molestias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, magni dolor. Nostrum at eligendi cum tempore repellat aut voluptatibus repellendus et? Nisi sequi id, doloremque exercitationem ut dolorem corporis amet?</p>
+        </section>
+    </main>
+</body>
+</html>
