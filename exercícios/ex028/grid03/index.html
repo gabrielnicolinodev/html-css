@@ -7,18 +7,16 @@
     <style>
         div.container{
             border: 3px solid blue;
-            height: 250px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 100px 40% repeat(2, 1fr);
+            grid-auto-flow: row;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 1fr;
             gap: 10px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
-            /*
-            items: itens
-            content: conteúdo (não é o container e sim o conteúdo)*/
+            place-items: normal normal;
+            place-content: normal normal;
+           
         }
 
         div.item{
@@ -26,8 +24,9 @@
             padding: 5px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bolder;
-            
+            display: flex;
         }
+
     
     </style>
 </head>
@@ -41,6 +40,8 @@
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
     
 </body>
