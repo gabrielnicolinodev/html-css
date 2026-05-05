@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+
+    grid-template-rows: 100px  50px  250px  50px;
+    grid-template-columns: 100px 300px 100px;
+    gap: 5px;
+}
+
+.topo, .menu, .principal, .secundario, .rodape{
+    background-color: rgb(182, 96, 16);
+    color: rgb(52, 52, 133);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+
+.menu{
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+}
+
+.principal{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
+
+.secundario{
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+
+.rodape{
+    grid-row: 4 / 5;
+    grid-column: 1 / 5;
+}
