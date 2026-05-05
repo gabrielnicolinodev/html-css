@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px ;
+    gap: 5px;
+}
+
+.caixa{
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Grid-area: row-start / column-start / row-end / column-end*/
+
+#topo{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#menu{
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+#principal{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#secundaria{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#rodape{
+    grid-area: 4 / 1 / 5 / 3;
+}
